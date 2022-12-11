@@ -1,3 +1,3 @@
 export const checkRoute = () => {
-    return { message: 'hello there' }
-}
+    return { message: "hello there" };
+};

@@ -1,6 +1,6 @@
-import { Router } from 'express'
-import * as CheckController from '../controllers/checkController'
+import { Router } from "express";
+import * as CheckController from "../controllers/checkController";
 
-export const checkRouter = Router()
+export const checkRouter = Router();
 
-checkRouter.get('/', CheckController.testController)
+checkRouter.get("/", CheckController.testController);

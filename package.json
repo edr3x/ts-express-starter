@@ -1,8 +1,14 @@
 {
     "name": "ts-express-starter",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/index.js",
     "license": "MIT",
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": false
+    },
     "scripts": {
         "build": "tsc",
         "start": "node dist/index.js",
