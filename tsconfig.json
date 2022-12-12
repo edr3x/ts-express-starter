@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es2019",
+        "target": "es2018",
         "module": "commonjs",
-        "rootDir": "./src",
         "outDir": "./dist",
         "removeComments": true,
         "esModuleInterop": true,
@@ -10,5 +9,8 @@
         "strict": true,
         "alwaysStrict": true,
         "skipLibCheck": true
-    }
+    },
+    "include": [
+        "src/**/*"
+    ]
 }
