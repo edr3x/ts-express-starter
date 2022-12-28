@@ -3,12 +3,15 @@
         "target": "es2018",
         "module": "commonjs",
         "outDir": "./dist",
-        "removeComments": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
         "strict": true,
         "alwaysStrict": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "forceConsistentCasingInFileNames": true
     },
     "include": [
         "src/**/*"
