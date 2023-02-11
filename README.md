@@ -19,3 +19,6 @@ Generates the JS output in `dist` folder.\
 ### `yarn start`
 
 Runs the js code from `dist` folder.\
+
+>Note:\
+>You can use any package manager of your choice to run scripts
