@@ -1,1 +1,3 @@
-export const checkRoute = async () => "hello there";
+export async function checkRoute() {
+    return "hello there";
+}

@@ -4,7 +4,7 @@ import { failureResponse, successResponse } from "../utils/response";
 
 import * as CheckService from "../services/healthcheck.service";
 
-export const testController = async (_req: Request, res: Response) => {
+export async function testController(_req: Request, res: Response) {
     try {
         const test = await CheckService.checkRoute();
 
@@ -12,4 +12,4 @@ export const testController = async (_req: Request, res: Response) => {
     } catch (e: any) {
         return res.status(500).json(failureResponse(e.message));
     }
-};
+}

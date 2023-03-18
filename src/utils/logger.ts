@@ -6,9 +6,9 @@ const logFormat = format.combine(
         (info) =>
             `[${info.timestamp}] - [${info.level.toUpperCase()}] - ${
                 info.message
-            }`
+            }`,
     ),
-    format.colorize({ all: true })
+    format.colorize({ all: true }),
 );
 
 export const logger = createLogger({
@@ -22,6 +22,8 @@ export const logger = createLogger({
     ],
 });
 
+// info: you can see your logs stored in `app.log` file in project directory
+
 /*
  * logging priority:
  *
@@ -29,5 +31,5 @@ export const logger = createLogger({
  * warn
  * info   -> lower priority
  *
- * There are other lower ones but we will not be using them
+ * There are other lower ones like http, verbose, debug and silly
  */

@@ -1,24 +1,65 @@
 # TS express starter
 
-## Available Scripts
+Express.js server starter with TypeScript
 
-In the project directory, you can run:
+## Initialize the Project
 
-### `yarn dev`
+```bash
+npm i
+# or
+yarn
+# or
+pnpm i
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:5050](http://localhost:5050) to view it in your browser.
+## Run the server in development mode
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-### `yarn build`
+This Runs the app in the development mode.\
+Open <http://localhost:8080> to view it in your browser.\
+If it shows `{"status":404,"error":"404 endpoint not found"}` then the server is running successfully.
 
-Generates the JS output in `dist` folder.\
+You can also go to <http://localhost:8080/api/v1/healthcheck> for healthcheck route
 
-### `yarn start`
+## To Build the project
 
-Runs the js code from `dist` folder.\
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
->Note:\
->You can use any package manager of your choice to run scripts
+Generates the JS output in `dist` folder.
+
+## Start the server
+
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
+
+Runs the js code from `dist` folder.
+
+## Format the Code in `src/` directory
+
+```bash
+npm run format
+# or
+yarn format
+# or
+pnpm format
+```
+
+This uses prettier to format the code according to config defined in `.prettierrc.yaml` file
