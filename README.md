@@ -2,6 +2,43 @@
 
 Express.js server starter with TypeScript
 
+## File Structure
+```
+project root
+|
+|__ src/
+|   |
+|   |__ config/
+|   |   |__ env.ts
+|   |
+|   |__ controllers/
+|   |   |__ healthcheck.controller.ts
+|   |
+|   |__ middlewares/
+|   |   |__ notFound.middleware.ts
+|   |
+|   |__ routes/
+|   |   |__ healthcheck.route.ts
+|   |   |__ index.ts
+|   |
+|   |__ services/
+|   |   |__ healthcheck.service.ts
+|   |
+|   |__ utils/
+|   |   |__ logger.ts
+|   |   |__ response.ts
+|   |
+|   |__ main.ts
+|
+|__ .gitignore
+|__ .prettierrc.yaml
+|__ app.log
+|__ package.json
+|__ pnpm-lock.yaml
+|__ README.md
+|__ tsconfig.json
+```
+
 ## Initialize the Project
 
 ```bash
