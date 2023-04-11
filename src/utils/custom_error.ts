@@ -2,6 +2,7 @@ import { Response } from "express";
 
 export class CustomError extends Error {
     statusCode = 500;
+    message = "Internal Server ERROR";
     constructor(statusCode: number, message: any) {
         super();
         this.statusCode = statusCode;
