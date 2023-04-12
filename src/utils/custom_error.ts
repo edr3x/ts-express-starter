@@ -1,16 +1,7 @@
-import { Response } from "express";
-
 export class CustomError extends Error {
     statusCode = 500;
-    message = "Internal Server ERROR";
     constructor(statusCode: number, message: any) {
-        super();
+        super(message);
         this.statusCode = statusCode;
-        this.message = message;
     }
 }
-
-export const handleError = (err: CustomError, res: Response) => {
-    const { statusCode, message } = err;
-    res.status(statusCode).json({ success: false, message });
-};
