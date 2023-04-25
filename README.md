@@ -100,3 +100,9 @@ pnpm format
 ```
 
 This uses prettier to format the code according to config defined in `.prettierrc.yaml` file
+
+## To Throw a error from anywhere on the codebase
+```ts
+   throw new CustomError(500, "Unexpected Server ERROR");
+```
+- here first argument to send is statuscode and second argument is any form of string or any
