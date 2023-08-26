@@ -1,5 +1,11 @@
+import { z } from "zod";
+
 import "dotenv/config";
 
-export default {
-    PORT: parseInt(process.env.PORT as string, 10) || 8080,
-};
+const envSchema = z.object({
+    PORT: z.string().optional(),
+    NODE_ENV: z.string().optional(),
+    CLIENT_BASE_URL: z.string().url(),
+});
+
+export const env = envSchema.parse(process.env);
