@@ -69,3 +69,20 @@ This uses prettier to format the code according to config defined in `.prettierr
    throw new CustomError(500, "Unexpected Server ERROR");
 ```
 - here first argument to send is statuscode and second argument is any form of string or any
+
+## Dockerize
+
+### Build the image
+
+```sh
+docker build -t <image-name> .
+```
+
+### Run built image
+
+```sh
+docker run -e CLIENT_BASE_URL=localhost:8080 -p 8080:8080 -it <image-name>
+```
+> Note:
+> 
+> If you are not using `yarn` as package manager then change to respective package manager in `Dockerfile`
