@@ -4,16 +4,17 @@
     "main": "dist/index.js",
     "license": "",
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && tsc-alias",
         "start": "node dist/main.js",
-        "dev": "nodemon src/main.ts",
+        "dev": "ts-node-dev -r tsconfig-paths/register ./src/main.ts",
         "format": "prettier --write \"src/**/*.ts\""
     },
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
-        "winston": "^3.8.2"
+        "winston": "^3.8.2",
+        "zod": "^3.22.2"
     },
     "devDependencies": {
         "@types/cors": "^2.8.13",
@@ -22,6 +23,9 @@
         "nodemon": "^2.0.21",
         "prettier": "^2.8.4",
         "ts-node": "^10.9.1",
+        "ts-node-dev": "^2.0.0",
+        "tsc-alias": "^1.8.7",
+        "tsconfig-paths": "^4.2.0",
         "typescript": "^5.0.2"
     }
 }
