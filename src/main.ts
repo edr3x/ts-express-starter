@@ -7,7 +7,7 @@ import router from "./modules/v1/main.router";
 import { CustomError } from "./utils/custom_error";
 
 const app = express();
-const port = config.app.port || 8080;
+const port = config.app.port;
 
 // Middlewares
 app.use(cors(config.cors));

@@ -1,13 +1,11 @@
 import { CorsOptions } from "cors";
-import { env } from "./env";
 
-const isProduction = env.NODE_ENV === "prod";
+import { env } from "./env";
 
 export default {
     app: {
-        env: env.NODE_ENV,
-        isProduction: isProduction,
-        port: env.PORT,
+        port: env.PORT || 8080,
+        isProduction: env.NODE_ENV === "production",
     },
     cors: {
         origin: [
@@ -17,4 +15,4 @@ export default {
         ],
         credentials: true,
     } as CorsOptions,
-};
+} as const;
