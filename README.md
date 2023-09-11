@@ -4,63 +4,49 @@ Express.js server starter with TypeScript
 
 ## Initialize the Project
 
-```bash
-npm i
-# or
+```sh
 yarn
-# or
-pnpm i
 ```
 
 ## Run the server in development mode
 
-```bash
-npm run dev
-# or
+```sh
 yarn dev
-# or
-pnpm dev
 ```
 
 This Runs the app in the development mode.\
 Open <http://localhost:8080> to view it in your browser.\
-If it shows `{"status":404,"error":"404 endpoint not found"}` then the server is running successfully.
-
-You can also go to <http://localhost:8080/api/v1/healthcheck> for healthcheck route
+If it shows `Hello There!` then the server is running successfully.
 
 ## To Build the project
 
-```bash
-npm run build
-# or
+```sh
 yarn build
-# or
-pnpm build
 ```
 
 Generates the JS output in `dist` folder.
 
 ## Start the server
 
-```bash
-npm run start
-# or
+```sh
 yarn start
-# or
-pnpm start
 ```
 
 Runs the js code from `dist` folder.
 
 ## Format the Code in `src/` directory
 
-```bash
-npm run format
-# or
+```sh
 yarn format
-# or
-pnpm format
 ```
+
+## To run Tests
+```sh
+yarn test
+```
+
+>Note:\
+> You can use any package manager of your choice
 
 This uses prettier to format the code according to config defined in `.prettierrc.yaml` file
 
@@ -83,6 +69,5 @@ docker build -t <image-name> .
 ```sh
 docker run -e CLIENT_BASE_URL=localhost:8080 -p 8080:8080 -it <image-name>
 ```
-> Note:
-> 
+> Note:\
 > If you are not using `yarn` as package manager then change to respective package manager in `Dockerfile`
